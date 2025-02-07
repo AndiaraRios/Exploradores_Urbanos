@@ -1,5 +1,5 @@
 .corNav {
-    background-color: #FF7F50;
+    background-color: #FFB52E;
 }
 
 .logo img {
@@ -20,6 +20,10 @@
 
 .card_imagem img {
     height:400px;
+}
+
+.corFooter {
+    background-color: #FFD68A;
 }
 
 @media (max-width: 768px) {

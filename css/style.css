@@ -1,0 +1,30 @@
+.corNav {
+    background-color: #FF7F50;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.banner img {
+    height: 600px;
+}
+
+.carousel-inner img {
+    height: 500px;
+}
+
+.margem {
+    margin-top: 16vh;
+}
+
+.card_imagem img {
+    height:400px;
+}
+
+@media (max-width: 768px) {
+    .banner img {
+        height: 300px;
+    }
+    
+}

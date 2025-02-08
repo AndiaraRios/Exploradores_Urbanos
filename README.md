@@ -1,4 +1,7 @@
-Exploradores Urbanos
+
+![logo](https://github.com/user-attachments/assets/19632fbf-f46b-45ee-a6a7-e86fcdbe2df0)
+
+Exploradores Urbanos 
 
 
 Bem-vindo ao Exploradores Urbanos! Este projeto é um site para uma agência de viagens especializada em roteiros urbanos, oferecendo experiências únicas para quem deseja explorar o melhor das cidades ao redor do mundo.

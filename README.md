@@ -41,28 +41,9 @@ Diagrama Lógico
 
 _____________________________________________________________________________________
 Diagrama Físico
-CREATE TABLE Passageiro (
-    PassageiroID INT PRIMARY KEY AUTO_INCREMENT,
-    Nome VARCHAR(100) NOT NULL,
-    Email VARCHAR(100) UNIQUE NOT NULL,
-    Telefone VARCHAR(20) NOT NULL
-);
 
 
-CREATE TABLE Reserva (
-    ReservaID INT PRIMARY KEY AUTO_INCREMENT,
-    Data DATE NOT NULL,
-    PassageiroID INT NOT NULL,
-    DestinoID INT NOT NULL,
-    Passagem_idaID INT NOT NULL,
-    Passagem_voltaID INT NOT NULL,
-    FOREIGN KEY (ClienteID) REFERENCES Passageiro(PassageiroID) ON DELETE CASCADE,
-    FOREIGN KEY (PacoteID) REFERENCES Pacote(DestinoID) ON DELETE CASCADE
-);
+![image](https://github.com/user-attachments/assets/9887eafe-1ef7-4329-89f4-3ab43301de89)
 
 
-CREATE TABLE Destino (
-    DestinoID INT PRIMARY KEY AUTO_INCREMENT,
-    Localizacao VARCHAR(150) NOT NULL,
-    Descricao TEXT NOT NULL
-);
+

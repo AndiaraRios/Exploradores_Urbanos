@@ -26,3 +26,43 @@ Frontend: HTML, CSS, Bootstrep
 
 
 Vamos juntos explorar o mundo, uma cidade por vez! ✈️🏙️
+
+_____________________________________________________________________________________
+Diagrama Conceitual
+
+![image](https://github.com/user-attachments/assets/865f55ee-7e18-4077-a7c0-25ff90c2630b)
+
+
+_____________________________________________________________________________________
+Diagrama Lógico
+
+![image](https://github.com/user-attachments/assets/f97fe516-38dc-44be-9f58-0db70cb385d8)
+
+
+_____________________________________________________________________________________
+Diagrama Físico
+CREATE TABLE Passageiro (
+    PassageiroID INT PRIMARY KEY AUTO_INCREMENT,
+    Nome VARCHAR(100) NOT NULL,
+    Email VARCHAR(100) UNIQUE NOT NULL,
+    Telefone VARCHAR(20) NOT NULL
+);
+
+
+CREATE TABLE Reserva (
+    ReservaID INT PRIMARY KEY AUTO_INCREMENT,
+    Data DATE NOT NULL,
+    PassageiroID INT NOT NULL,
+    DestinoID INT NOT NULL,
+    Passagem_idaID INT NOT NULL,
+    Passagem_voltaID INT NOT NULL,
+    FOREIGN KEY (ClienteID) REFERENCES Passageiro(PassageiroID) ON DELETE CASCADE,
+    FOREIGN KEY (PacoteID) REFERENCES Pacote(DestinoID) ON DELETE CASCADE
+);
+
+
+CREATE TABLE Destino (
+    DestinoID INT PRIMARY KEY AUTO_INCREMENT,
+    Localizacao VARCHAR(150) NOT NULL,
+    Descricao TEXT NOT NULL
+);
